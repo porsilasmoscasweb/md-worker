@@ -36,7 +36,7 @@ if __name__ == "__main__":
         "--output_toc_filename",
         type=str,
         default="TOC",
-        help="Name of the output file (No extension)."
+        help="Name of the output file (No extension).By default: 'TOC'"
     )
 
     # Optional args: [None | List]
@@ -50,7 +50,7 @@ if __name__ == "__main__":
         type=str,
         nargs='*',
         default=None,
-        help="Genera una copia de todos los ficheros a la ruta destino especificada o por defector '_output' y trabaja sobre este directorio."
+        help="Generates a copy of all files to an specified destination path or the default path '_output' and works on this directory."
     )
 
     args = parser.parse_args()
