@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import argparse
 
-from toc import MarkdownTOCGenerator
+from core import MdToc
 
 def set_default_path(path, root_path, default=''):
     if path is not None:
@@ -63,5 +63,5 @@ if __name__ == "__main__":
 
 
     if toc:
-        generador = MarkdownTOCGenerator(root_dir, destination_path=destination_path, ignore=ignore, output_toc_file=output_toc_filename)
+        generador = MdToc(root_dir, destination_path=destination_path, ignore=ignore, output_toc_filename=output_toc_filename)
         generador.create_toc()

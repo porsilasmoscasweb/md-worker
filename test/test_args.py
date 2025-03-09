@@ -4,10 +4,8 @@ import os
 import shutil
 import subprocess
 
-PATH_MAC = "/Users/egarriga/GitHub/md-worker/test"
-PATH_LINUX = "/home/egarriga/Documents/markdown-TOC"
-
-INPUT_DIR = PATH_MAC+"/test_dir"
+ABSPATH = os.path.abspath('')
+INPUT_DIR = ABSPATH + "/test/test_dir"
 
 def rmtree(curr_dir):
     try:
